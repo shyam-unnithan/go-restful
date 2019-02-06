@@ -1,9 +1,10 @@
 package main
 
 import (
-	"assignments/4/router"
 	"log"
 	"net/http"
+
+	"github.com/shyam-unnithan/go-restful/router"
 )
 
 func main() {

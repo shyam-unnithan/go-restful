@@ -1,9 +1,10 @@
 package mapstore
 
 import (
-	"assignments/4/domain"
 	"errors"
 	"log"
+
+	"github.com/shyam-unnithan/go-restful/domain"
 )
 
 // MapStore for storing customer

@@ -1,8 +1,8 @@
 package router
 
 import (
-	"assignments/4/controller"
-	"assignments/4/domain"
+	"github.com/shyam-unnithan/go-restful/controller"
+	"github.com/shyam-unnithan/go-restful/domain"
 
 	"github.com/gorilla/mux"
 )

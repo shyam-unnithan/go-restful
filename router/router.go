@@ -1,7 +1,7 @@
 package router
 
 import (
-	"assignments/4/mapstore"
+	"github.com/shyam-unnithan/go-restful/mapstore"
 
 	"github.com/gorilla/mux"
 )
