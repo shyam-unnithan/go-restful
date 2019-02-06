@@ -2,6 +2,7 @@ package controller
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 	"strconv"
 
@@ -21,6 +22,7 @@ func (handler CustomerController) PostCustomer(w http.ResponseWriter, r *http.Re
 	var cust cust
 	err := json.NewDecoder(r.Body).Decode(&cust)
 	if err != nil {
+		log.Println(r)
 		return nil, http.StatusInternalServerError, errors.Wrap(err, "Unable to decode json request body")
 	}
 	id := strconv.Itoa(len(handler.Store.GetAll()) + 1)
