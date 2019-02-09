@@ -67,7 +67,7 @@ func (handler CustomerController) GetCustomerByID(w http.ResponseWriter, r *http
 		Email: c.Email,
 	}
 
-	return cust, http.StatusNoContent, nil
+	return cust, http.StatusOK, nil
 }
 
 //PutCustomer ...
