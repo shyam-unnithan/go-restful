@@ -1,5 +1,8 @@
 package domain
 
+// To generate the mock implementation used
+// mockgen -destination=mocks/mock_customer.go -package=mocks github.com/shyam-unnithan/go-restful/domain CustomerController
+
 // Customer structure
 type Customer struct {
 	ID, Name, Email string
